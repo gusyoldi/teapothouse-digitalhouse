@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head')%>
+
+<body>
+    <%- include('../partials/header'); %> 
+
+    <!--ACA ESTAN LAS SECCIONES-->
+
+    <main>
+       
+        <form
+        novalidate
+        id="formulario"
+         method="POST"
+        action="/users/register"
+        enctype="multipart/form-data">
+
+
+            <img src="../img/logo_teapothouse.png" alt="logo Teapot house" width="142" height="100" class="tphouse-logo marginbtm" />
+            <h3>REGISTRATE.</h3>
+            <div class="inputcaja">
+                <label for="nombreUsuario">Nombre y Apellido</label>
+                <input id="nombreApellido" name="nombreApellido" type="text" placeholder="Ej: Teapot House" <% if (locals.oldData && oldData.nombreApellido) { %>
+                 value="<%= oldData.nombreApellido %>"
+                <% } %> required>
+                <% if (locals.errors && errors.nombreApellido) { %>
+                <span class="error-text"><%= errors.nombreApellido.msg %></span> 
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="usuario">Nombre de Usuario</label>
+                <input  class="usuario" name="usuario" type="text" placeholder="Ej: TeapotHouse" <% if (locals.oldData && oldData.usuario) { %>
+                value="<%= oldData.usuario %>"
+                <% } %> required>
+                <% if (locals.errors && errors.usuario) { %>
+                <span class="error-text"><%= errors.usuario.msg %></span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="email">Email</label>
+                <input class="email" name="email" type="email" placeholder="Ej: teapothouse@gmail.com" <% if (locals.oldData && oldData.email) { %>
+                value="<%= oldData.email %>"
+                <% } %> required>
+                <% if (locals.errors && errors.email) { %>
+                <span class="error-text"><%= errors.email.msg %></span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input class="nacimiento" name="nacimiento" type="date" <% if (locals.oldData && oldData.nacimiento) { %>
+                value="<%= oldData.nacimiento %>"
+                <% } %> autocomplete required>
+                <% if (locals.errors && errors.nacimiento) { %>
+                <span class="error-text"><%= errors.nacimiento.msg %></span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="domicilio">Domicilio</label>
+                <input class="domicilio" name="domicilio" type="text" placeholder="Ubicacion" <% if (locals.oldData && oldData.domicilio) { %>
+                value="<%= oldData.domicilio %>"
+                <% } %> required>
+                <% if (locals.errors && errors.domicilio) { %>
+                <span class="error-text"><%= errors.domicilio.msg %> </span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="telefono">Numero de telefono</label>
+                <input class="telefono" name="telefono" type="tel" placeholder="Ej: 3434565879" <% if (locals.oldData && oldData.telefono) { %>
+                value="<%= oldData.telefono %>"
+                <% } %> required>
+                <% if (locals.errors && errors.telefono) { %>
+                <span class="error-text"><%= errors.telefono.msg %> </span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="password">Ingrese contraseña</label>
+                <input class="password" name="password" type="password" placeholder="********" required>
+                <% if (locals.errors && errors.password) { %>
+                <span class="error-text"><%= errors.password.msg %> </span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="password2">Confirme su contraseña</label>
+                <input class="password2" name="password2" type="password" placeholder="********" required>
+                <% if (locals.errors && errors.password2) { %>
+                <span class="error-text"><%= errors.password2.msg %> </span>
+                <% } %>
+            </div>
+            <div class="inputcaja">
+                <label for="imagen">Imagen de usuario</label>
+                <input class="profile-pic" type="file" name="profile_pic" required/>
+                <% if (locals.errors && errors.profile_pic) { %>
+                <span class="error-text"><%= errors.profile_pic.msg %> </span>
+                <% } %>
+            </div>
+            <ul class="errores"></ul>
+            <br>
+    
+            <button class="btn">ENVIAR</button>
+            <br>
+            <button class="btn">
+                BORRAR
+            </button>
+        </form>
+    </main>
+<script src="/js/registerValidation.js"></script>
+
+    <!--EL PIE DE PAGINA-->
+
+    <%- include('../partials/footer'); %> 
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Nunito:wght@300;400&family=Roboto:wght@100;300&display=swap');
+*{
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.Titulo{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.caja-producto{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    list-style: none;
+    margin-bottom: 10px;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.caja-producto img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.caja-producto .nombre-producto{
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+}
+
+.caja-producto .precio {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media(min-width: 770px){
+    
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.Titulo{
+    font-size: 34px;
+}
+}

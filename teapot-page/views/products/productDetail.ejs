@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header'); %>
+    <section class="todas-las-descripciones">
+        <section class="primer-bloque">
+            <img src= <%= producto.img1 %>>
+            <section class="datos-productos">
+                <div class="titulos">
+                    <p><%= producto.name %></p>
+                </div>
+                <div class="informacion">
+                    <p> <%= producto.description %></p>
+                </div>
+                <div class="precio">
+                    <span> $<%= producto.precio %> </span>
+                </div>
+                <div class="carrito">
+                    <div class="compras">
+                        <button id="boton-menos" class="emogi"><i class="fa-solid fa-minus"></i></button>
+                        <input id="cantidad" class="numero" type="number" value="1" disabled>
+                        <button id="boton-mas" class="emogi"><i class="fa-solid fa-plus"></i></button>
+                        <button><i class="fa-solid fa-person-carry-box"></i></button>
+                    </div>
+                    <button id="add" class="añadir" data-id="<%= producto.id %>">Añadir al carrito</button>
+                </div>
+                <div class="links">
+                    <textarea cols="5px" rows="5px" style="margin-bottom:15px; margin-right: 10px; font-size: 20px;">Agregá tu comentario! </textarea>
+                    <a class="link" href="#">Customizar pedido</a>
+                </div>
+            </section>
+        </section>
+        <section class="segundo-bloque">
+            <div class="datos-productos">
+                <div class="titulos">
+                    <p>Descripción del producto</p>
+                </div>
+                <div class="informacion">
+                    <p><%= producto.description %></p>
+                </div>
+                <div class="titulos">
+                    <p>Consejos</p>
+                </div>
+                <div class="informacion">
+                    <p><%= producto.consejos %></p>
+                </div>
+            </div>
+            <img src= <%= producto.img2 %>>
+        </section>
+        <section class="tercer-bloque">
+            <div class="datos-productos">
+                <div class="titulos">
+                    <p>Entrega</p>
+                </div>
+                <div class="informacion">
+                    <p><%= producto.entrega %></p>
+                </div>
+                <div class="titulos">
+                    <p>Reclamos</p>
+                </div>
+                <div class="informacion" >
+                    <p>Ante cualquier reclamo, comuniquese a tphouse@gmail.com</p>
+                </div>
+            </div>
+            <img src= <%= producto.img3 %>>
+            </section>
+            <script src="/js/addToCart.js"></script>
+    
+    </section>
+    
+    <%- include('../partials/footer'); %> 
+</body>
+</html>

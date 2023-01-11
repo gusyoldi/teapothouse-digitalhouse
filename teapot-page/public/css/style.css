@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Nunito:wght@300;400&family=Roboto:wght@100;300&display=swap");
+* {
+  font-family: "EB Garamond", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.4%;
+  overflow-x: hidden;
+  background-color: rgb(240, 240, 240);
+  min-height: 100%;
+}
+
+body {
+  padding-top: 40px;
+}
+
+.recomendados {
+  display: flex;
+  margin-top: -64px;
+  flex-direction: column;
+}
+.recomendados .carrousel-title {
+  margin-top: 135px;
+  width: 100%;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 50px;
+}
+.recomendados .carrousel-subtitle {
+  font-size: 23px;
+  color: darkgray;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  margin: -6px;
+}
+.fotos-carrousel {
+  width: 90vw;
+  height: 70vh;
+  background-image: url("/img/fotocarrousell.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recomendados .carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.boton {
+  font-size: 30px;
+  border-radius: 34px;
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  color: chocolate;
+  background-color: burlywood;
+  text-align: center;
+}
+.boton:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 10px chocolate;
+}
+
+.recomendados .carrousel img {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+.recomendados .te-gustara {
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.listado-productos .caja-contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.listado-productos .titulo-feo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  margin-bottom: 30px;
+}
+
+.listado-productos .caja-contenedor p {
+  font-size: 0px;
+}
+
+.listado-productos .caja-contenedor .nombre {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listado-productos .caja-contenedor .nombre h2 {
+  font-size: 17px;
+  margin-top: 250px;
+  font-family: "Cinzel", serif;
+}
+
+.listado-productos .caja-contenedor .caja {
+  height: 310px;
+  cursor: pointer;
+}
+
+.listado-productos .caja-contenedor .caja img {
+  width: 100%;
+  height: 100%;
+  margin-top: -100%;
+  transition: all 0.5s ease;
+}
+
+.listado-productos .caja-contenedor .caja:hover img {
+  filter: blur(3px);
+}
+
+.personalizar {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  flex-direction: row;
+  margin: 30px;
+}
+.personalizar .imagen {
+  padding: 20px;
+}
+
+.personalizar .imagen img {
+  width: 100%;
+}
+
+.personalizar .texto {
+  font-size: 20px;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.personalizar2 {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  flex-direction: row-reverse;
+  margin: 30px;
+}
+.personalizar2 .imagen {
+  padding: 20px;
+}
+.personalizar2 .imagen img {
+  max-width: 100%;
+}
+.personalizar2 .texto {
+  font-size: 20px;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .recomendados .carrousel-title {
+    font-size: 30px;
+  }
+
+  .recomendados .carrousel {
+    padding: 10px;
+  }
+
+  .listado-productos .caja-contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .listado-productos .caja-contenedor .caja {
+    width: 100%;
+  }
+  .listado-productos .caja-contenedor p {
+    font-size: 25px;
+  }
+  .listado-productos .titulo-feo {
+    display: none;
+  }
+  .personalizar {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .personalizar img {
+    width: 100%;
+  }
+  .personalizar2 {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .personalizar2 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 49%;
+  }
+  .recomendados .carrousel {
+    display: none;
+  }
+  .listado-productos .caja-contenedor {
+    margin-top: 40px;
+  }
+}

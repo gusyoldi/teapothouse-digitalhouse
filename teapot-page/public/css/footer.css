@@ -1,0 +1,83 @@
+footer {
+    background-color: #6adbd8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer .logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo-footer img {
+    width: 12rem;
+    margin-top: 1.5rem;
+}
+
+footer .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+footer .creditos,
+.caja-contacto {
+    width: 50%;
+}
+
+footer .creditos {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+}
+
+footer .caja-contacto {
+    display: flex;
+    justify-content: end;
+}
+
+footer .cajita-contacto .cajita {
+    display: flex;
+    justify-content: center;
+}
+
+footer .cajita-contacto .cajita h4 {
+    font-size: 1.5rem;
+    right: 3rem;
+    text-decoration: underline;
+}
+
+footer .cajita-contacto i {
+    color: black;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+footer i:hover {
+    transform: scale(1.1);
+    color: gray;
+    transition: all 0.2s linear;
+}
+
+@media (max-width: 769px) {
+    footer {
+        height: 100%;
+        display: flex;
+    }
+
+    footer .creditos {
+        display: none;
+    }
+
+    footer .contenedor-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .contenedor-footer .caja-contacto {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,96 @@
+[
+ {
+  "id": 1,
+  "nombreApellido": "Juan Perez",
+  "usuario": "JPerez",
+  "email": "JPerez@gmail.com",
+  "password": "$2a$10$xi/eOPgvGjRgueF06YeJhOtI7sejZkXtcfkviNl1L3B.c8GwmRDVG",
+  "categoria": "comprador mayorista",
+  "profile_pic": "/img/users/jnfijs-1652144006705.jpg",
+  "nacimiento": "22-05-2001",
+  "imagen": "img",
+  "domicilio": "Juncal 365, CABA",
+  "telefono": "1539002285"
+ },
+ {
+  "id": 2,
+  "nombreApellido": "Lucia Galbin",
+  "usuario": "luliGalbin",
+  "email": "luli@gmail.com",
+  "password": "$2a$10$xi/eOPgvGjRgueF06YeJhOtI7sejZkXtcfkviNl1L3B.c8GwmRDVG",
+  "categoria": "comprador minorista",
+  "imagen": "img",
+  "nacimiento": "22-05-2001",
+  "domicilio": "Av Santa Fe 2567",
+  "telefono": "1112756902",
+  "profile_pic": "/img/users/jnfijs-1652144006705.jpg"
+ },
+ {
+  "id": 3,
+  "nombreApellido": "Ignacio López",
+  "usuario": "ignaPasteleria",
+  "email": "nachoL@gmail.com",
+  "profile_pic": "/img/users/jnfijs-1652144006705.jpg",
+  "password": "$2a$10$xi/eOPgvGjRgueF06YeJhOtI7sejZkXtcfkviNl1L3B.c8GwmRDVG",
+  "categoria": "comprador mayorista",
+  "imagen": "img",
+  "nacimiento": "30-01-1996",
+  "domicilio": "Tucuman 340, CABA",
+  "telefono": "1163109471"
+ },
+ {
+  "nombreApellido": "vxdccf s",
+  "usuario": "xcvvxcv",
+  "email": "xvch@h",
+  "nacimiento": "2022-03-29",
+  "domicilio": "fdfxc",
+  "telefono": "xcv",
+  "profile_pic": "/img/users/jnfijs-1652144006705.jpg",
+  "password": "$2a$10$xi/eOPgvGjRgueF06YeJhOtI7sejZkXtcfkviNl1L3B.c8GwmRDVG",
+  "id": 4
+ },
+ {
+  "nombreApellido": "jnfijs s",
+  "usuario": "jnhjkh",
+  "email": "jjkb@v",
+  "nacimiento": "2022-04-07",
+  "domicilio": "hgbuyg",
+  "telefono": "gouygy",
+  "password": "$2a$10$OUSmeCHBuzb.kId9.VDiuOQ9GgzqegVKweJ1ZwVZLWc5YR/DGWNAK",
+  "profile_pic": "/img/users/jnfijs-1652144006705.jpg",
+  "id": 5
+ },
+ {
+  "nombreApellido": "Magali s",
+  "usuario": "magui",
+  "email": "magali@gmail",
+  "nacimiento": "2022-04-21",
+  "domicilio": "aaca",
+  "telefono": "564654654",
+  "password": "$2a$10$eBnJpS1EbXBC87p9CXMjc.6tLjcuIGh0NerVLM5y3U6zfglbCbwNe",
+  "profile_pic": "/img/users/Magali-1652145297544.jpg",
+  "id": 6
+ },
+ {
+  "id": 7,
+  "nombreApellido": "Gus Yoldi",
+  "usuario": "Roli",
+  "email": "yoldi.gustavo@gmail.com",
+  "nacimiento": "2022-05-04",
+  "domicilio": "callefalsa 123",
+  "telefono": "01143456348",
+  "password": "$2a$10$BLOZ8bPbYDfUIytEhUIRbOMr2CD4nfv.G2lNsnB87/JEN5YiX3mHm",
+  "profile_pic": "/img/users/1653342641071.jpg"
+ },
+ {
+  "id": 8,
+  "nombreApellido": "Julian O",
+  "usuario": "julian",
+  "email": "juliann@gmail.com",
+  "nacimiento": "1997-12-03",
+  "domicilio": "ASD 123",
+  "telefono": "15555555",
+  "password": "$2a$10$zC2EWT7bNbuTjGh0ceCe5uWx.2kqlsM3Gohaj5FKYtksNeinp12O.",
+  "profile_pic": "/img/users/1655841073203.jpg"
+ }
+]

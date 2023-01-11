@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head'); %>
+    <body>
+        <%- include('../partials/header'); %>
+        <main>
+            <div class="cart">
+                <% if(list.length === 0){ %>
+                <h2>No hay elementos en el carrito</h2>
+        
+                <% } else { %>
+                <ul class="product-list">
+                    <h2>Mi carrito</h2>
+                    <% let total = 0; list.map( p => { let cantidad = p.cantidad  %>
+                    <li class="product-in-cart">
+                        <a href="/products/<%= p.id%>"><img src="<%= p.img %>" /></a>
+                        <span class="nombre-producto"><a href="/products/<%= p.id%>"><%= p.name %></a></span>
+                        <span class="precio-producto"
+                            >subtotal: $<%= p.precio *p.cantidad  %>
+                        </span>
+                        <div class="control">
+                            <button id="boton-menos" class="dec"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" style="align-items: center;" id="cantidad" class="cantidad" value="<%= p.cantidad %>" disabled
+                                >
+
+                            <button id="boton-mas" class="inc"><i class="fa-solid fa-plus"></i></button>
+                            <button id="eliminar" class="eliminar"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                       <div >
+                           <% total = total + p.precio * p.cantidad}); %>
+                       </div>
+                    </li>
+                    <span id="total">Total de la compra $<%= total %></span>
+                    <button id="comprar">Terminar compra</button>
+                    <button id="comprar"><a href="/products">Seguir comprando</a></button>
+                </ul>
+                <% } %>
+            </div>
+        </main>
+        <script src="/js/shoppingCart.js"></script>
+        <%- include('../partials/footer') %> 
+    </body>
+    </html>

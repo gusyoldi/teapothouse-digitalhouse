@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <section class="recomendados">
+      <p class="carrousel-title">Teapot House</p>
+      <p class="carrousel-subtitle">Buenos Aires</p>
+      <div class="carrousel">
+        <div class="boton atras">
+          <i class="fa-solid fa-arrow-left" style="color: #fff"></i>
+        </div>
+        <div class="fotos-carrousel"></div>
+        <div class="boton adelante">
+          <i class="fa-solid fa-arrow-right" style="color: #fff"></i>
+        </div>
+      </div>
+    </section>
+    <section class="listado-productos">
+      <p class="titulo-feo">Nuestos Productos</p>
+     
+
+      <div class="caja-contenedor">
+        <p>Nuestos Productos</p>
+        <div class="caja">
+          <a href="/products/category/pasteleria">
+            <div class="nombre">
+              <h2>Pastelería</h2>
+            </div>
+            <img src="/img/maca.png" alt="" />
+          </a>
+        </div>
+        <div class="caja">
+          <a href="/products/category/panaderia">
+            <div class="nombre">
+              <h2>Panadería</h2>
+            </div>
+            <img src="/img/colecciones.png" alt="" />
+          </a>
+        </div>
+        <div class="caja">
+          <a href="/products/category/chocolateria">
+            <div class="nombre">
+              <h2>Chocolateria</h2>
+            </div>
+            <img src="/img/tabletas.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="personalizar">
+      <div class="texto">
+        <h3>Personalizá tu pedido</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iste at
+          reprehenderit ab animi ratione, nisi recusandae autem fuga. Tempora
+          quia quo obcaecati ab et amet officia eos neque laudantium.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="/img/macarons.jpg" alt="macarons" />
+      </div>
+    </section>
+    <section class="personalizar2">
+      <div class="texto">
+        <h3>Pedidos especiales para eventos</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iste at
+          reprehenderit ab animi ratione, nisi recusandae autem fuga. Tempora
+          quia quo obcaecati ab et amet officia eos neque laudantium.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="/img/cake.jpg" alt="macarons" />
+      </div>
+    </section>
+    <script src="/js/carrousell.js"></script>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

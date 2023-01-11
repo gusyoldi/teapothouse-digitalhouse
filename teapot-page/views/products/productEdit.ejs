@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head')%>
+    <body>
+        <%- include('../partials/header'); %>
+
+        <main>
+            <form
+                id="formulario"
+                novalidate
+                method="POST"
+                action="/products/<%= product.id %>?_method=PUT"
+                enctype="multipart/form-data"
+            >
+                <img
+                    src="/../img/logo_teapothouse.png"
+                    alt="logo Teapot house"
+                    width="142"
+                    height="100"
+                    class="tphouse-logo marginbtm"
+                />
+                <h3>Cambia información de algún producto</h3>
+                <div class="inputcaja">
+                    <label for="name">Nuevo nombre</label>
+                    <input
+                        id="nombre"
+                        name="name"
+                        type="text"
+                        placeholder="Ej: macarons"
+                        value="<%= product.product_name %>"
+                        required
+                    />
+                </div>
+                <div class="inputcaja">
+                    <label for="precio">Nuevo precio($)</label>
+                    <input
+                        name="precio"
+                        type="text"
+                        placeholder=" $1000"
+                        value="<%= product.price %>"
+                        required
+                    />
+                </div>
+                <div class="inputcaja">
+                    <label for="entrega">Nueva entrega</label>
+                    <select name="entrega" id="entrega">
+                        <% for( let i = 0; i < shipping.length; i++ ) { %>
+                            <option value="<%= shipping[i].id %>" <%= product.shipping_id == shipping[i].id ? 'selected' : null %>><%= shipping[i].shipping %></option>
+                        <% } %>
+                    </select> 
+                </div>
+                <div class="inputcaja">
+                    <label for="consejos">Nuevo consejos</label>
+                    <input
+                        name="consejos"
+                        type="text"
+                        placeholder="Ej:no mantener al sol "
+                        value="<%= product.tip %>"
+                        required
+                    />
+                </div>
+                <div class="inputcaja">
+                    <label for="Descripción">Nueva descripción detallada</label>
+                    <input
+                        id="descripcion"
+                        name="description"
+                        type="text"
+                        placeholder="Escriba aquí la informacion larga del producto "
+                        value="<%= product.product_description %>"
+                        required
+                    />
+                </div>
+                <div class="inputcaja">
+                    <label for="tipoProducto">Qué tipo de producto es?</label>
+                    <select id="tipoProducto" name="category">
+                        <option value="1">Panadería</option>
+                        <option value="2">Pastelería</option>
+                        <option value="3">Chocolateria</option>
+                    </select>
+                </div>
+                <div class="inputcaja">
+                    <label for="Imagen">Nueva imagen del producto</label>
+                    <input type="file" name="img1" accept=".jpg" />
+                    <input type="file" name="img2" accept=".jpg" />
+                    <input type="file" name="img3" accept=".jpg" />
+                </div>
+                <ul class="errores"></ul>
+                <button class="btn">Enviar</button>
+            </form>
+            <form
+                action="/products/<%= product.id%>?_method=DELETE"
+                method="POST"
+            >
+                <button class="btn">Borrar</button>
+            </form>
+        </main>
+        <script src="/js/productCreateValidation.js"></script>
+        <%- include('../partials/footer'); %>
+    </body>
+</html>

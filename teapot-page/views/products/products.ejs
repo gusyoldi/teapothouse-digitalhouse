@@ -1,0 +1,22 @@
+<html lang="en">
+  <%- include('../partials/head')%>
+
+  <body>
+    <header><%- include('../partials/header'); %></header>
+    <section class="Titulo">
+      <p>Nuestos productos</p>
+    </section>
+    <section class="productos">
+      <% productCategory.forEach( p => { %>
+      <a href="/products/<%= p.id %>"
+        ><ul class="caja-producto">
+          <li class="imagen"><img src="<%= p.img1 %>" /></li>
+          <li class="nombre-producto"><%= p.name %></li>
+          <li class="precio">$<%= p.precio %></li>
+        </ul></a
+      >
+      <% }) %>
+    </section>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>

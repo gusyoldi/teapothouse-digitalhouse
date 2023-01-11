@@ -1,0 +1,20 @@
+<header>
+    <a href="/" class="logo">
+        <img src="/img/logo_teapothouse.png" alt="logo">
+    </a>
+    <!-- ACA METO EL BOTONSITO DE LAS TRES BARRITAS PARA DESPLEGAR LA BARRA DE NAVEGACION EN PANTALLAS CHICAS-->
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fa fa-bars"></label>
+    <!--ESTA ES LA BARRA DE NAVEGACION-->
+    <nav class="navbar">
+        <% if (locals.isLogged) { %>
+        <a href="/users/<%=locals.userLogged.id%>"><%= locals.userLogged.usuario %> </a>
+        <a href="/users/logout">Logout</a>
+        <a href="/cart"><i class="fa-solid fa-basket-shopping"><% let productos = 0;%></i></a>
+        <% }else { %>
+            <a href="/users/login">Login <i class="fa-solid fa-user"></i></a>
+            <a href="/users/register">Registrate</a>
+            <a href="/cart"><i class="fa-solid fa-basket-shopping"></i></a>
+        <% } %>
+    </nav>
+</header>

@@ -1,0 +1,143 @@
+:root {
+    --color1: #1cc2bc;
+    --color2: #6adbd8;
+    --poppins: "Poppins", sans-serif;
+}
+
+form h3{
+    font-size: 2rem;
+    margin: 25px auto;
+}
+
+label{
+    font-size: 15px;
+}
+
+/* Main */
+main{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 100px;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: var(--color2) solid 2px;
+    
+}
+.errores{
+    list-style: none;
+    font-size: 20px;
+    align-items: initial;
+    background-color: rgb(255, 173, 173);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid red;
+    display: none;
+    justify-content: left;
+    border-radius: 5px;
+}
+.errores.active{
+    display: block;
+}
+.is-valid {
+    color: #198754;
+    border: 1px solid green;
+  }
+  
+.is-invalid {
+    color: #842029;
+    border: 1px solid #BB2D3B;
+}
+main form{
+    background: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+main form label{
+    font-size: 2rem;
+}
+
+main form .inputcaja,
+.password{
+    margin: 20px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.password{
+    width: 90%;
+    margin: auto;
+}
+main form .inputcaja input,
+main .password input{
+    color: var(--gris-oscuro);
+    font-size: 16px;
+    padding: 10px;
+    width: 90%;
+    border: solid var(--color2) 1.5px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+main form .inputcaja input:hover,
+.password input:hover{
+    border: solid 1.5px var(--color1);
+}
+
+.btn{
+    border: #1cc2bc solid 2px;
+    border-radius: 8px;
+    font-size: 2rem;
+    width: 22rem;
+    margin: 2rem;
+    padding: 1rem;
+    background: #6adbd8;
+    transition: background, border-color .2s linear;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--color1);
+    border-color: var(--color2);
+}
+
+.error-text {
+    font-size: 1.4rem;
+    color: red;
+}
+
+@media (max-width: 767px){
+    main{
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 361px){
+    main{
+        width: 80%;
+    }
+
+    main form{
+        width: 80%;
+        padding: 5px;
+    }
+
+    input,
+    main .password input{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .password{
+        width: 80%;
+    }
+}

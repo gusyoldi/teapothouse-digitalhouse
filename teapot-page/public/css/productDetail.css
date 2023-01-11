@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Nunito:wght@300;400&family=Roboto:wght@100;300&display=swap');
+
+*{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.enunciado .volver-home .volver{
+    border: 1px solid gray;
+}
+
+.todas-las-descripciones{
+
+    padding: 10px;
+}
+.foto-logo .foto-chica{
+    display: none;
+}
+.primer-bloque{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.enunciado .vuelta-home {
+    font-size: 20px;
+    padding: 0px;
+}
+.primer-bloque img{
+    width: 100%;
+    display: flex;
+    flex-grow:1;
+    text-align:center;
+    padding:30px;
+}
+.datos-productos{
+    padding:0px;
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: end;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.datos-productos .titulos p{
+
+    font-size: 23px;
+    margin-top: 77px;
+    font-family: 'Cinzel', serif;
+}
+
+
+.datos-productos .informacion p{
+    font-size: 16px;
+    padding: 12px;
+}
+.datos-productos .precio span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.datos-productos .links{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px
+}
+.datos-productos .links .link{
+    color: black;
+    background-color: #1cc2bc;
+    border: 1px solid gray;
+    font-size: 20px;
+    width: 50%;
+    margin:auto;
+    border-radius: 9px;
+}
+
+.datos-productos .carrito {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.datos-productos .carrito .compras{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.datos-productos .carrito .compras .numero{
+    width: 33px;
+    height: 33px;
+    text-align: center;
+}
+.datos-productos .carrito .compras .emogi i{
+    color:#1cc2bc;
+    width: 20px;
+    height: 20px;
+    font-size: 19px;
+    margin-right: 7px;
+    margin-left: 7px
+}
+.datos-productos .carrito .compras .emogi i:hover{
+    color:#6adbd8;
+    width: 23px;
+    height: 23px;
+}
+
+
+.datos-productos .carrito .añadir{
+    font-size: 20px;
+    width: 50%;
+    margin:auto;
+    cursor: pointer;
+    flex-grow: 1;
+    color: black;
+    background-color: #1cc2bc;
+    border: 1px solid gray;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.datos-productos .carrito .añadir:hover{
+    background-color:#6adbd8 ;
+}
+.datos-productos .links .link:hover{
+    background-color:#6adbd8 ;
+}
+.segundo-bloque{
+    display: flex;
+    margin-top: -64px;
+    flex-direction: column;
+}
+
+.segundo-bloque img{
+    width: 100%;
+    display: flex;
+
+    text-align:center;
+    padding:10px;
+}
+.tercer-bloque{
+    display: flex;
+    margin-top: -64px;
+    flex-direction: column;
+}
+.tercer-bloque img{
+    width: 100%;
+    display: flex;
+    flex-grow:1;
+    text-align:center;
+    padding:10px;
+}
+.recomendados{
+    display: flex;
+    margin-top: -64px;
+    flex-direction: column;
+}
+.recomendados .carrousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recomendados .carrousel .flecha i{
+    color:#1cc2bc;
+    font-size: 30px;
+}
+.recomendados .carrousel .flecha i:hover{
+    font-size: 35px;
+    color: #6adbd8;
+}
+.recomendados .carrousel img{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.recomendados .te-gustara{
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 769px){
+    .primer-bloque{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    
+    }
+    .primer-bloque img{
+        width: 57%;
+        padding: 47px;
+    }
+    .segundo-bloque{
+        display: flex;
+        margin-top: -64px;
+        justify-content: space-around;
+        flex-direction: row;
+        
+    }
+    .segundo-bloque img{
+        width: 43%;
+        margin-top: 53px;
+        display: flex;
+
+        text-align: center;
+        padding: 10px;
+    }
+    .tercer-bloque{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .tercer-bloque img{
+        width: 57%;
+        margin-top: 53px;
+        display: flex;
+
+        text-align: center;
+        padding: 10px; 
+    }
+}
